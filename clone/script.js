@@ -9,5 +9,14 @@ window.onload = function() {
         loginBox.classList.remove('existence');   
         loginBox.classList.add('empty');
     }
-});
+    });
+
+    document.addEventListener("keypress", function() {
+    });
+
+    document.getElementById("forgotID").addEventListener('click', function() {
+        
+    });
+
 }
+
