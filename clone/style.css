@@ -37,13 +37,13 @@ h1 {
 
 .outBoxb {width: 448px; height:500px; border:1px solid #dadce0; border-radius:6px;}
 .outBoxb .inputBoxb {position:relative; height:inherit;}
-.outBoxb .inputBoxb input[type="text"] {padding:0 10px; width:100%; height:inherit; font-size:14px; box-sizing:border-box; border:1px solid #dadce0; border-radius: 6px; outline:none;}
+.outBoxb .inputBoxb input[type="password"] {padding:0 10px; width:100%; height:inherit; font-size:14px; box-sizing:border-box; border:1px solid #dadce0; border-radius: 6px; outline:none;}
 .outBoxb .inputBoxb label {position:absolute; left:0; bottom:0; padding:0 7px; color:#5f6368; font-size:17px; font-weight:400; background:#fff; transform:scale(1) translate(4px, -16px); transition:all .15s; pointer-events:none;}
-.outBoxb.empty .inputBoxb input[type="text"]:focus,
-.outBoxb.existence .inputBoxb input[type="text"] {border:2px solid #1a73e8; border-radius: 6px;}
-.outBoxb.empty .inputBoxb input[type="text"]:focus + label,
+.outBoxb.empty .inputBoxb input[type="password"]:focus,
+.outBoxb.existence .inputBoxb input[type="password"] {border:2px solid #1a73e8; border-radius: 6px;}
+.outBoxb.empty .inputBoxb input[type="password"]:focus + label,
 .outBoxb.existence .inputBoxb label {color:#1a73e8; transform:scale(.85) translate(-10px, -48px);}
-.outBoxb.empty .inputBoxb input[type="text"] {border:1px solid #dadce0; border-radius: 6px;}
+.outBoxb.empty .inputBoxb input[type="password"] {border:1px solid #dadce0; border-radius: 6px;}
 
 
 button.normal {
