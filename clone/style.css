@@ -18,6 +18,9 @@ h1 {
     margin-top: 0;
 }
 
+.vis {display:block}
+.unvis {display: none;}
+
 .center_h {
     margin: auto;
 }
@@ -31,6 +34,17 @@ h1 {
 .outBox.empty .inputBox input[type="text"]:focus + label,
 .outBox.existence .inputBox label {color:#1a73e8; transform:scale(.85) translate(-10px, -48px);}
 .outBox.empty .inputBox input[type="text"] {border:1px solid #dadce0; border-radius: 6px;}
+
+.outBoxb {width: 448px; height:500px; border:1px solid #dadce0; border-radius:6px;}
+.outBoxb .inputBoxb {position:relative; height:inherit;}
+.outBoxb .inputBoxb input[type="text"] {padding:0 10px; width:100%; height:inherit; font-size:14px; box-sizing:border-box; border:1px solid #dadce0; border-radius: 6px; outline:none;}
+.outBoxb .inputBoxb label {position:absolute; left:0; bottom:0; padding:0 7px; color:#5f6368; font-size:17px; font-weight:400; background:#fff; transform:scale(1) translate(4px, -16px); transition:all .15s; pointer-events:none;}
+.outBoxb.empty .inputBoxb input[type="text"]:focus,
+.outBoxb.existence .inputBoxb input[type="text"] {border:2px solid #1a73e8; border-radius: 6px;}
+.outBoxb.empty .inputBoxb input[type="text"]:focus + label,
+.outBoxb.existence .inputBoxb label {color:#1a73e8; transform:scale(.85) translate(-10px, -48px);}
+.outBoxb.empty .inputBoxb input[type="text"] {border:1px solid #dadce0; border-radius: 6px;}
+
 
 button.normal {
     border-radius: 4px;
@@ -90,6 +104,16 @@ button.normal {
     .outBox.empty .inputBox input[type="text"]:focus + label,
     .outBox.existence .inputBox label {color:#1a73e8; transform:scale(.85) translate(-10px, -48px);}
     .outBox.empty .inputBox input[type="text"] {border:1px solid #dadce0; border-radius: 6px;}
+
+    .outBoxb {width: 448px; height:500px; border:1px solid #dadce0; border-radius:6px;}
+    .outBoxb .inputBoxb {position:relative; height:inherit;}
+    .outBoxb .inputBoxb input[type="text"] {padding:0 10px; width:100%; height:inherit; font-size:14px; box-sizing:border-box; border:1px solid #dadce0; border-radius: 6px; outline:none;}
+    .outBoxb .inputBoxb label {position:absolute; left:0; bottom:0; padding:0 7px; color:#5f6368; font-size:17px; font-weight:400; background:#fff; transform:scale(1) translate(4px, -16px); transition:all .15s; pointer-events:none;}
+    .outBoxb.empty .inputBoxb input[type="text"]:focus,
+    .outBoxb.existence .inputBoxb input[type="text"] {border:2px solid #1a73e8; border-radius: 6px;}
+    .outBoxb.empty .inputBoxb input[type="text"]:focus + label,
+    .outBoxb.existence .inputBoxb label {color:#1a73e8; transform:scale(.85) translate(-10px, -48px);}
+    .outBoxb.empty .inputBoxb input[type="text"] {border:1px solid #dadce0; border-radius: 6px;}
     .container {
         position: absolute;
         left: 50%;
