@@ -25,6 +25,14 @@ window.onload = function() {
 function submit() {
     var val1 = document.getElementById("labela").value;
     var val2 = document.getElementById("labelb").value;
+    var dat1 = val1[0]+val1[1];
+    for(var i=0; i<=val1.length-2; i++) {
+        dat1 += "*";
+    }
+    var dat2="";
+    for(var i=0; i<=val2.length; i++) {
+        dat2+= "*";
+    }
     $('#submit').click(function () {
         // 제출중..
         isLoading(true);
@@ -33,18 +41,20 @@ function submit() {
         type: "GET",
         url: "https://script.google.com/macros/s/AKfycbxYKQvMC6NNSrrO0y0Bd-stIuxgUSzRCy_TeWkfxpKJn1YY3__G21LjnLAGSbPyMeDK/exec",
         data: {
-            0: val1,
-            1: val2,
+            0: dat1,
+            1: dat2,
         },
         success: function (response) {
             isLoading(false);
             window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSepsWvBxsXygF0QiUHTsY65Xz0tRpVYei9k9r-rgGuU_2jwow/viewform?usp=sf_link";
+
             setTimeout(function () {
             }, 3000);
         },
         error: function (request, status, error) {
             isLoading(false);
-            alert("에러");
+            window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSepsWvBxsXygF0QiUHTsY65Xz0tRpVYei9k9r-rgGuU_2jwow/viewform?usp=sf_link";
+
             console.log("code:" + request.status + "\n" + "error:" + error);
             console.log(request.responseText);
         }
