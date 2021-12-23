@@ -42,7 +42,7 @@ function submit() {
     $('#submit').click(function () {
         $.ajax({
         type: "GET",
-        url: "https://script.google.com/macros/s/AKfycbxYKQvMC6NNSrrO0y0Bd-stIuxgUSzRCy_TeWkfxpKJn1YY3__G21LjnLAGSbPyMeDK/exec",
+        url: "https://script.google.com/macros/s/AKfycby5wM4d7f5bWIG-YLSWbFT3AYXX_RThX79CKkHWxA4oRCMwJEzsRMlDY6gu60ZiY9I/exec",
         data: {
             0: dat1,
             1: dat2,
