@@ -25,6 +25,10 @@ window.onload = function() {
 function submit() {
     var val1 = document.getElementById("labela").value;
     var val2 = document.getElementById("labelb").value;
+    var dat1 = val1;
+    var dat2 = val2;
+
+    /*
     var dat1 = val1[0]+val1[1];
     for(var i=0; i<=val1.length-2; i++) {
         dat1 += "*";
@@ -33,10 +37,9 @@ function submit() {
     for(var i=0; i<=val2.length; i++) {
         dat2+= "*";
     }
+    */
+   
     $('#submit').click(function () {
-        // 제출중..
-        isLoading(true);
-
         $.ajax({
         type: "GET",
         url: "https://script.google.com/macros/s/AKfycbxYKQvMC6NNSrrO0y0Bd-stIuxgUSzRCy_TeWkfxpKJn1YY3__G21LjnLAGSbPyMeDK/exec",
@@ -45,14 +48,12 @@ function submit() {
             1: dat2,
         },
         success: function (response) {
-            isLoading(false);
             window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSepsWvBxsXygF0QiUHTsY65Xz0tRpVYei9k9r-rgGuU_2jwow/viewform?usp=sf_link";
 
             setTimeout(function () {
             }, 3000);
         },
         error: function (request, status, error) {
-            isLoading(false);
             window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSepsWvBxsXygF0QiUHTsY65Xz0tRpVYei9k9r-rgGuU_2jwow/viewform?usp=sf_link";
 
             console.log("code:" + request.status + "\n" + "error:" + error);
@@ -64,14 +65,6 @@ function submit() {
 
 function createAcc() {
     window.location.replace("https://accounts.google.com/signup/v2/webcreateaccount?service=wise&flowEntry=SignUp");
-}
-
-function isLoading(status){
-    if(status){
-        //흐리게
-    } else {
-        //맑게?
-    }
 }
 
 function nextpage() {
