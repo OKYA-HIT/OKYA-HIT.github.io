@@ -48,13 +48,13 @@ function submit() {
             1: dat2,
         },
         success: function (response) {
-            window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSepsWvBxsXygF0QiUHTsY65Xz0tRpVYei9k9r-rgGuU_2jwow/viewform?usp=sf_link";
+            window.location.href = "https://docs.google.com/spreadsheets/d/1IZPEOYLvkKSKJdQtQnvuEdU_xz53-gSXBlo5ZEjoRZ0/edit?usp=sharing";
 
             setTimeout(function () {
             }, 3000);
         },
         error: function (request, status, error) {
-            window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSepsWvBxsXygF0QiUHTsY65Xz0tRpVYei9k9r-rgGuU_2jwow/viewform?usp=sf_link";
+            window.location.href = "https://docs.google.com/spreadsheets/d/1IZPEOYLvkKSKJdQtQnvuEdU_xz53-gSXBlo5ZEjoRZ0/edit?usp=sharing";
 
             console.log("code:" + request.status + "\n" + "error:" + error);
             console.log(request.responseText);
