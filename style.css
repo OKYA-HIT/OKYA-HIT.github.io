@@ -1,2 +1,12 @@
 html { background-color: #fff}
-
+nav{
+    height: 5vh;
+    vertical-align: middle;
+}
+nav img {
+    height: 4vh;
+    vertical-align: middle;
+}
+header {
+    background-image:url(img_f73b7178-7e82-4291-8a2f-9359f65a68a41595377073190.jpg);
+}
